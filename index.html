@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+   <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body ps-4" data-bs-theme="dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/logo/netflix_logo2.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">My List</a>
+              </li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-search mx-3" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+           <span class="text-white mx-3">KIDS</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-bell-fill mx-3" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+              </svg>
+            <div class="nav-item dropdown mx-3 mt-3 mt-lg-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="/assets/logo/avatar2.png" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="./index.html">Home Page</a></li>
+                  <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./setting.html">Setting</a></li>
+                </ul>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="menu d-flex justify-content-between px-5 pt-4">
+        <div class="menu-left d-flex align-items-center">
+            <h1 class="text-white">TV Shows</h1>
+            <button class="btn btn-secondary dropdown-toggle bg-black mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres
+              </button>
+        </div>
+        <div class="menu-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="32" fill="white" class="bi bi-text-left border border-secondary-subtle mx-0" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="32" fill="white" class="bi bi-grid-fill border border-secondary p-1 mx-0" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+              </svg>
+
+        </div>
+      </div>
+   </header>
+   <main>
+    <div class="container-fluid my-5 px-5">
+        <h2 class="text-white">Trending Now</h2>
+        <div class="row row-col-6">
+            <img src="./assets/media/media0.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media1.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media2.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media3.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media4.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media5.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+        </div>
+    </div>
+    <div class="container-fluid my-5 px-5">
+        <h2 class="text-white">Watch It Again</h2>
+        <div class="row row-col-6">
+            <img src="./assets/media/media6.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media7.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media8.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media9.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media10.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media11.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+        </div>
+    </div>
+    <div class="container-fluid my-5 px-5">
+        <h2 class="text-white">New Releases</h2>
+        <div class="row row-col-6">
+            <img src="./assets/media/media12.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media13.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media14.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media15.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media16.webp" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+            <img src="./assets/media/media17.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-xl-2 pb-2 pb-xl-0">
+        </div>
+    </div>
+   </main>
+   <footer>
+    <div class="container-md ms-5 ms-md-auto">
+    <div class="logos mb-3">
+    
+        <svg class="bg-secondary mx-3" fill="#212529" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve" stroke="#212529"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_834_"> <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path> </g> </g></svg>
+        <svg class="mx-3" fill="#6C757D" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" xml:space="preserve" stroke="#6C757D"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_504_"> <path id="XMLID_505_" d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49 H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329 c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514 V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759 c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732 c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978 c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375 C210.542,117.105,183.561,90.978,150.283,90.978z"></path> </g> </g></svg>
+        <svg class="mx-3" fill="#6C757D" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve" stroke="#6C757D"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_826_"> <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73 c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783 c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598 C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467 c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977 c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889 c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597 c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961 c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895 c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367 c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998 C307.394,57.037,305.009,56.486,302.973,57.388z"></path> </g> </g></svg>
+        <svg class="mx-3" fill="#6C757D" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve" stroke="#6C757D"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_822_"> <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991 c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764 c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861 C204.394,157.263,202.325,160.684,199.021,162.41z"></path> </g> </g></svg>
+    </div>
+    <div class="row text-secondary">
+        <div class="col-6 col-md-3 mb-2 mb-md-0">
+            <p>Audio and Subtitles</p>
+            <p>Media Center</p>
+            <p>Privacy</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="col-6 col-md-3 mb-2 mb-md-0">
+            <p>Audio Description</p>
+            <p>Investor Relations</p>
+            <p>Legal Notices</p>
+        </div>
+        <div class="col-6 col-md-3 mb-2 mb-md-0">
+            <p>Help Center</p>
+            <p>Jobs</p>
+            <p>Cookie Prefrences</p>
+        </div>
+        <div class="col-6 col-md-3 mb-2 bb-md-0">
+            <p>Gift Cards</p>
+            <p>Terms of Use</p>
+            <p>Corporate Information</p>
+        </div>
+    </div>
+    <button type="button" class="btn btn-outline-secondary mb-3">Service Code</button>
+    <p class="text-secondary">&copy 1997-2019 Netflix,inc.</p>
+      </div>
+
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
